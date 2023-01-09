@@ -1,11 +1,11 @@
-import { CategoriesRepository } from '../../repositories/CategoriesRepository';
-import { CreateCategoryController } from './CreateCategoryController';
-import { CreateCategoryService } from './CreateCategoryService';
+import { CategoriesRepository } from '../../repositories/CategoriesRepository'
+import { CreateCategoryController } from './CreateCategoryController'
+import { CreateCategoryService } from './CreateCategoryService'
 
-const categoriesRepository = CategoriesRepository.getInstance();
+const categoriesRepository = CategoriesRepository.getInstance()
 
-const createCategoriesService = new CreateCategoryService(categoriesRepository);
+const createCategoriesService = new CreateCategoryService(categoriesRepository)
 
 export const createCategoryController = new CreateCategoryController(
-	createCategoriesService,
-);
+	createCategoriesService
+)
